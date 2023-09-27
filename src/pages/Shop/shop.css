@@ -34,3 +34,6 @@
     color: white;
     cursor: pointer;
 }
+.Description b{
+    font-size: 14px;
+}
