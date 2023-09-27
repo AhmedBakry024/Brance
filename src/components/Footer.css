@@ -30,9 +30,15 @@
 a{
     text-decoration: none !important;
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 862px){
     .wrapper{
         height: 460px;
+    }
+
+}
+@media only screen and (max-width: 413px){
+    .wrapper{
+        height: 480px;
     }
 
 }
