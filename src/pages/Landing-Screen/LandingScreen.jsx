@@ -9,7 +9,6 @@ import Armani from '../../assets/Partners/Armani.png'
 import Givenchy from '../../assets/Partners/Givenchy.png'
 
 const LandingScreen = () => {
-    //TODO: footer
 
     return (
         <div className='container-fluid'>
@@ -19,13 +18,12 @@ const LandingScreen = () => {
                     <br /><br /><br />
                     <h1 className="text-Center">Welcome to Brance</h1>
                     <br />
-                    <p className="text-Center">Your Gate to the Fragrance World </p>
-                </div>
-                <div>
+                    <p className="text-Center text-wrap">Your Gate to the Fragrance World </p>
                     <Link to="/main">
-                        <button className='shopbtn position-absolute start-50 top-50 translate-middle'>Shop</button>
+                        <button className='shopbtn start-50 translate-middle'>Shop</button>
                     </Link>
                 </div>
+                
             </div>
             <br/>
             <h1 className='partners-text'>Our Partners</h1>
