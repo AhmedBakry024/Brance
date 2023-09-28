@@ -37,3 +37,26 @@
 .Description b{
     font-size: 14px;
 }
+.paging{
+    display: flex;
+    justify-content: center;
+}
+.paging button{
+    width: 45px ;
+    height: 30px ;
+    background-color: rgb(19, 19, 19);
+    color:white;
+    border: none ;
+    border-radius: 8px;
+    margin: 10px;
+    text-align: center;
+}
+.paging input{
+    width: 40px;
+    text-align: center;
+    border: 0;
+    background-color: transparent;
+}
+.pagesWord{
+    margin-bottom: 0px;
+}

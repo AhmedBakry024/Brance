@@ -9,51 +9,61 @@ import p8 from "./assets/8.jpg"
 
 export const PRODUCTS = [
     {
-        id:1,
+        id: 1,
         Name: "Sauvage Dior",
         Price: 80.0,
         Image: p1
     },
     {
-        id:2,
+        id: 2,
         Name: "The One Dolce&Gabbana ",
         Price: 60.0,
         Image: p2,
     },
     {
-        id:3,
+        id: 3,
         Name: "Halloween Man X ",
         Price: 70.0,
         Image: p3,
     },
     {
-        id:4,
+        id: 4,
         Name: "Mercedes Benz Club Black ",
         Price: 100.0,
         Image: p4,
     },
     {
-        id:5,
+        id: 5,
         Name: "Individuel Montblanc ",
         Price: 40.0,
         Image: p5,
     },
     {
-        id:6,
+        id: 6,
         Name: "Hugo Reversed ",
         Price: 60.0,
         Image: p6,
     },
     {
-        id:7,
+        id: 7,
         Name: "Encre Noire Lalique ",
         Price: 30.0,
         Image: p7,
     },
     {
-        id:8,
+        id: 8,
         Name: "Le Male Jean Paul Gaultier ",
         Price: 80.0,
         Image: p8,
     },
 ]
+
+export const getProducts = (page, limit) => {
+    let array = [];
+    for (let i = (page - 1) * limit; i < (page * limit); i++) {
+        if (i < PRODUCTS.length){
+            array.push(PRODUCTS[i])
+        }
+    }
+    return array;
+}
