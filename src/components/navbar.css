@@ -8,3 +8,11 @@ a {
 .icon{
     margin-left: 3px;
 }
+.full-cart{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    margin: 0px 0px 15px 58px;
+}

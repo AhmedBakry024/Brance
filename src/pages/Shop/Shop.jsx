@@ -3,7 +3,7 @@ import { PRODUCTS } from '../../products';
 import ProductDetails from './ProductDetails'
 import './shop.css'
 
-const Main = () => {
+const Shop = () => {
     return (
         <div className='Shop container-fluid'>
             <br/>
@@ -18,4 +18,4 @@ const Main = () => {
     );
 }
 
-export default Main;
+export default Shop;

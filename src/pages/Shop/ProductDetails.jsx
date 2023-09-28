@@ -12,15 +12,15 @@ const ProductDetails = (props) => {
 
     const notify = () => {
         toast.info('Item successfully added to cart', {
-            position: "bottom-right",
+            position: "top-right",
             autoClose: 2000,
             hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: false,
-            draggable: false,
+            draggable: true,
             progress: undefined,
             theme: "dark",
-            });
+        });
     }
     return (
         <div className='col-6 col-md-4 col-lg-3'>
@@ -41,15 +41,15 @@ const ProductDetails = (props) => {
                 </button>
             </div>
             <ToastContainer
-                position="bottom-right"
+                position="top-right"
                 autoClose={2000}
-                limit={3}
+                limit={2}
                 hideProgressBar={false}
                 newestOnTop
                 closeOnClick
                 rtl={false}
                 pauseOnFocusLoss={false}
-                draggable={false}
+                draggable
                 pauseOnHover={false}
                 theme="dark"
             />

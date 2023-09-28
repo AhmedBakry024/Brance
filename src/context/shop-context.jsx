@@ -30,9 +30,14 @@ const ShopContextProvider = (props) => {
         }
         return totalPrice;
     }
+    const removeAll = () => {
+        for (let i = 1; i < PRODUCTS.length + 1; i++) {
+            setCartItem(getDefaultCart());
+        }
+    }
 
 
-    const contextValue = { cartItem, addToCart, removeFromCart, updateAmount, getTotalPrice };
+    const contextValue = { cartItem, addToCart, removeFromCart, updateAmount, getTotalPrice, removeAll };
 
     return (
         <ShopContext.Provider value={contextValue}>

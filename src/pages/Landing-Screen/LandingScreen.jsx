@@ -19,7 +19,7 @@ const LandingScreen = () => {
                     <h1 className="text-Center">Welcome to Brance</h1>
                     <br />
                     <p className="text-Center text-wrap">Your Gate to the Fragrance World </p>
-                    <Link to="/main">
+                    <Link to="/shop">
                         <button className='shopbtn start-50 translate-middle'>Shop</button>
                     </Link>
                 </div>

@@ -7,7 +7,7 @@ import './cart.css'
 
 
 const Cart = () => {
-    const { cartItem, getTotalPrice } = useContext(ShopContext);
+    const { cartItem, getTotalPrice, removeAll } = useContext(ShopContext);
     return (
         <div className="container">
             <div className='cart row text-center p-5'>
@@ -24,10 +24,11 @@ const Cart = () => {
                 {getTotalPrice() > 0 ?
                     <div className='checkout'>
                         <p>Subtotal: ${getTotalPrice()}</p>
-                        <Link to="/main">
+                        <Link to="/shop">
                             <button>Continue Shopping</button>
                         </Link>
                         <button> Checkout </button>
+                        <button onClick={()=> removeAll() }>Remove All Products</button>
                     </div>
 
                     :
@@ -35,7 +36,7 @@ const Cart = () => {
                         <br/><br/><br/>
                         <h1>Your cart is empty</h1>
                         <br/><br/><br/>
-                        <Link to="/main">
+                        <Link to="/shop">
                             <button>Continue Shopping</button>
                         </Link>
                         <br/><br/><br/><br/><br/><br/><br/>
