@@ -247,7 +247,7 @@ export const PRODUCTS = [
         Brand: "Issey Miyake",
         Price: 65.0,
         Image: p31,
-    }
+    },
 
 ]
 

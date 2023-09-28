@@ -4,18 +4,24 @@ import { PRODUCTS } from '../products';
 export const ShopContext = createContext(null);
 
 const getDefaultCart = () => {
-    console.log(localStorage.getItem("cartItem"));
+    let cart = {};
     if (localStorage.getItem("cartItem") == undefined) {
-        let cart = {};
         for (let i = 1; i < PRODUCTS.length + 1; i++) {
             cart[i] = 0;
         }
-        localStorage.setItem("cartItem", JSON.stringify(cart));
-        return cart;
     }
     else {
-        return JSON.parse(localStorage.getItem("cartItem"));
+        for (let i = 1; i < PRODUCTS.length + 1; i++) {
+            if (JSON.parse(localStorage.getItem("cartItem"))[i] == null) {
+                cart[i] = 0;
+            }
+            else {
+                cart[i] = parseInt(JSON.parse(localStorage.getItem('cartItem'))[i]);
+            }
+        }
     }
+    localStorage.setItem("cartItem", JSON.stringify(cart));
+    return JSON.parse(localStorage.getItem("cartItem"));
     
 }
 
