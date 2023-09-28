@@ -5,9 +5,10 @@ import './shop.css'
 
 const Shop = () => {
     const [page, setPage] = useState(1);
-    const pageProducts = getProducts(page, 5);
+    const [limit, setLimit] = useState(8);
+    const pageProducts = getProducts(page, limit);
     const nextPage = () => {
-        if (page * 5 < PRODUCTS.length) {
+        if (page * limit < PRODUCTS.length) {
             setPage((prev) => prev + 1);
             window.scrollTo(0, 0);
         }
@@ -38,13 +39,13 @@ const Shop = () => {
                     <button onClick={() => prevPage()}>Prev</button>
                     
                     :
-                    <button className=' invisible'></button>
+                    <button className='dimmed'>Prev</button>
                 }
                 <input value={page} disabled></input>
-                {page * 5 < PRODUCTS.length ? 
+                {page * limit < PRODUCTS.length ? 
                 <button onClick={() => nextPage()}>Next</button>
                     :
-                    <button className='invisible'></button>
+                    <button className='dimmed'>Next</button>
                 } 
             </div>
         </div>

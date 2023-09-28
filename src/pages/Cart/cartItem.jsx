@@ -4,7 +4,7 @@ import { ShopContext } from '../../context/shop-context'
 
 
 const CartItem = (props) => {
-    const { id, Name, Price, Image } = props.data;
+    const { id, Name, Brand, Price, Image } = props.data;
     const { addToCart, cartItem, removeFromCart, updateAmount  } = useContext(ShopContext);
 
 
@@ -14,7 +14,8 @@ const CartItem = (props) => {
                 <img src={Image} className=' img-fluid'></img>
                 <div className='Description'>
                     <p>
-                        <b>{Name}</b>
+                        <b>{Name}</b><br/>
+                        {Brand}
                     </p>
                     <p>${Price}</p>
                     <div className='countHandler'>

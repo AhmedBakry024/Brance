@@ -2,10 +2,11 @@ import React, { useContext } from 'react';
 import { ShopContext } from '../../context/shop-context'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import './shop.css'
 
 
 const ProductDetails = (props) => {
-    const { id, Name, Price, Image } = props.data;
+    const { id, Name, Brand, Price, Image } = props.data;
     const { addToCart, cartItem } = useContext(ShopContext);
 
     const cartItemAmount = cartItem[id];
@@ -30,7 +31,8 @@ const ProductDetails = (props) => {
                     <br />
                     <div className="Description">
                         <p>
-                            <b>{Name}</b>
+                            <b>{Name}</b><br/>
+                            {Brand}
                         </p>
                         <p>${Price}</p>
                     </div>

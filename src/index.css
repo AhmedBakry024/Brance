@@ -2,6 +2,7 @@
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   background-color: #F0F2F5;
+  --toastify-icon-color-info: #fff !important;
 }
 /* .Main{
   margin-left: 70px;
