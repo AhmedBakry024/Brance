@@ -1,14 +1,15 @@
 .shopbtn{
     position: relative ;
-    width: 150px;
+    width: 120px;
     height: 50px;
     background-color: rgb(19, 19, 19);
-    color:white;
+    color:#F0F2F5;
     border: none;
     border-radius: 6px;
     margin-top: 20px;
     cursor: pointer;
-    margin: 20px;
+    margin: 15px;
+    margin-top: 60px;
 }
 .landing-main{
     position: relative;
@@ -18,25 +19,28 @@
     flex-direction: column;    
 }
 .text-Center{
-    font-family: 'Allura';
-    font-size: 7rex;
+    font-family: 'Sansita', sans-serif;;
+    font-size: 3rem;
     position: relative;
     text-align: center;
     
 }
 p.text-Center{
     /* font-family: 'Allura' !important; */
-    font-size: 3rem;
-    letter-spacing: 5px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.8rem;
+    letter-spacing: 3px;
     font-weight: bolder;
-    color:#ffffff
+    color:#191610;
+
+    margin-top: 50px;
 }
 .background{
-    position: absolute;
+    position:absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 103%;
     background-image: url(../../assets/Main-Background.webp);
     background-size: cover;
     background-attachment: fixed;
@@ -62,4 +66,8 @@ p.text-Center{
 }
 .Partners img:hover{
     transform: scale(1.1);
+}
+.rest-landing{
+    background-color: #F0F2F5;
+    opacity: 1;
 }

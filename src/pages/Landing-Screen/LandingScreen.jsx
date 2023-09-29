@@ -32,16 +32,18 @@ const LandingScreen = () => {
                 </div>
 
             </div>
-            <br />
-            <h1 className='partners-text'>Our Partners</h1>
-            <br />
-            <div className='Partners row'>
-                <img src={DG} />
-                <img src={Hugo} />
-                <img src={Versace} />
-                <img src={MontBlanc} />
-                <img src={Armani} />
-                <img src={Givenchy} />
+            <div className='rest-landing'>
+                <br />
+                <h1 className='partners-text'>Our Partners</h1>
+                <br />
+                <div className='Partners row'>
+                    <img src={DG} />
+                    <img src={Hugo} />
+                    <img src={Versace} />
+                    <img src={MontBlanc} />
+                    <img src={Armani} />
+                    <img src={Givenchy} />
+                </div>
             </div>
         </div>
     );
