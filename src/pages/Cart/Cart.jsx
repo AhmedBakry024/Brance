@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { PRODUCTS } from '../../products';
+import { PRODUCTSW } from '../../productsw';
 import { ShopContext } from '../../context/shop-context';
 import CartItem from './cartItem';
 import { Link } from 'react-router-dom'
@@ -20,11 +21,16 @@ const Cart = () => {
                             return <CartItem data={product} />
                         }
                     })}
+                    {PRODUCTSW.map((product) => {
+                        if (cartItem[product.id] > 0) {
+                            return <CartItem data={product} />
+                        }
+                    })}
                 </div>
                 {getTotalPrice() > 0 ?
                     <div className='checkout'>
                         <p>Subtotal: ${getTotalPrice()}</p>
-                        <Link to="/shop">
+                        <Link to="/shop" state={{ gender: "Men" }}>
                             <button>Continue Shopping</button>
                         </Link>
                         <button> Checkout </button>
@@ -36,7 +42,7 @@ const Cart = () => {
                         <br/><br/><br/>
                         <h1>Your cart is empty</h1>
                         <br/><br/><br/>
-                        <Link to="/shop">
+                        <Link to="/shop" state={{ gender: "Men" }}>
                             <button>Continue Shopping</button>
                         </Link>
                         <br/><br/><br/><br/><br/><br/><br/>

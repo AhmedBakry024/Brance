@@ -1,17 +1,18 @@
 import React, { createContext, useEffect, useState } from 'react';
 import { PRODUCTS } from '../products';
+import { PRODUCTSW } from '../productsw';
 
 export const ShopContext = createContext(null);
 
 const getDefaultCart = () => {
     let cart = {};
     if (localStorage.getItem("cartItem") == undefined) {
-        for (let i = 1; i < PRODUCTS.length + 1; i++) {
+        for (let i = 1; i < PRODUCTS.length + PRODUCTSW.length + 1; i++) {
             cart[i] = 0;
         }
     }
     else {
-        for (let i = 1; i < PRODUCTS.length + 1; i++) {
+        for (let i = 1; i < PRODUCTS.length + PRODUCTSW.length + 1; i++) {
             if (JSON.parse(localStorage.getItem("cartItem"))[i] == null) {
                 cart[i] = 0;
             }
@@ -46,13 +47,21 @@ const ShopContextProvider = (props) => {
     const getTotalPrice = () => {
         let totalPrice = 0;
         for (var key in cartItem) {
-            totalPrice += cartItem[key] * (PRODUCTS.find((product) => product.id === Number(key))).Price;
+            if (PRODUCTS.find((product) => product.id === Number(key)) !== undefined) {
+                totalPrice += cartItem[key] * (PRODUCTS.find((product) => product.id === Number(key))).Price;
+            }
         }
+        for (var key in cartItem) {
+            if (PRODUCTSW.find((product) => product.id === Number(key)) !== undefined) {
+                totalPrice += cartItem[key] * (PRODUCTSW.find((product) => product.id === Number(key))).Price;
+            }
+        }
+
         return totalPrice;
     }
     const removeAll = () => {
         let cart = {};
-        for (let i = 1; i < PRODUCTS.length + 1; i++) {
+        for (let i = 1; i < PRODUCTS.length + PRODUCTSW.length + 1; i++) {
             cart[i] = 0;
         }
         localStorage.setItem("cartItem", JSON.stringify(cart));

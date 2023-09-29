@@ -7,6 +7,7 @@ import Versace from '../../assets/Partners/Versace.png'
 import Hugo from '../../assets/Partners/Hugo.png'
 import Armani from '../../assets/Partners/Armani.png'
 import Givenchy from '../../assets/Partners/Givenchy.png'
+import Shop from '../Shop/Shop.jsx'
 
 const LandingScreen = () => {
 
@@ -19,22 +20,28 @@ const LandingScreen = () => {
                     <h1 className="text-Center">Welcome to Brance</h1>
                     <br />
                     <p className="text-Center text-wrap">Your Gate to the Fragrance World </p>
-                    <Link to="/shop">
-                        <button className='shopbtn start-50 translate-middle'>Shop</button>
-                    </Link>
+                    <div className=' d-flex justify-content-center'>
+                        <Link to="/shop" state={{ gender: "Men" }}>
+                            <button className='shopbtn '>Shop Men's</button>
+                        </Link>
+
+                        <Link to="/shop" state={{ gender: "Women" }}>
+                            <button className='shopbtn'>Shop Women's</button>
+                        </Link>
+                    </div>
                 </div>
-                
+
             </div>
-            <br/>
+            <br />
             <h1 className='partners-text'>Our Partners</h1>
-            <br/>
+            <br />
             <div className='Partners row'>
-                <img src={DG}/>
-                <img src={Hugo}/>
-                <img src={Versace}/>
-                <img src={MontBlanc}/>
-                <img src={Armani}/>
-                <img src={Givenchy}/>
+                <img src={DG} />
+                <img src={Hugo} />
+                <img src={Versace} />
+                <img src={MontBlanc} />
+                <img src={Armani} />
+                <img src={Givenchy} />
             </div>
         </div>
     );
