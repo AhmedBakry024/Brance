@@ -5,7 +5,7 @@ import ProductDetails from './ProductDetails'
 import './shop.css'
 import { useLocation } from 'react-router-dom';
 
-const Shop = (props) => {
+const Shop = () => {
     const location = useLocation();
     const [page, setPage] = useState(1);
     const [limit, setLimit] = useState(8);

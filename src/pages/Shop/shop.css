@@ -70,3 +70,58 @@
 .Toastify__progress-bar--info {
     background: #fff !important;
 }
+.Modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    width: 80%;
+    height: 80%;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    margin: 30px 0;
+    background-color: #f7f7f7;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    
+  }
+
+  .Overlay {
+    position: fixed ;
+    top: 0 ;
+    left: 0 ;
+    width: 100% ;
+    height: 100% ;
+    z-index: 1 ;
+    background-color: rgba(0, 0, 0, .5);
+  }
+.modal-div{
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.Modal img{
+    width: 190px;
+    mix-blend-mode: multiply;
+}
+.Modal::-webkit-scrollbar {
+    width: 0px;
+  }
+  .Description input{
+    width: 70px;
+    text-align: center;
+    border: 0;
+    background-color: transparent;
+}
+.plus-minus{
+    width: 30px ;
+    height: 30px ;
+    background-color: rgb(19, 19, 19);
+    color:white;
+    border: none ;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    padding-top: 0px;
+    font-weight: bolder;
+    font-size: larger;
+}

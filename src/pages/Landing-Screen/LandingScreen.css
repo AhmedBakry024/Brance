@@ -46,7 +46,7 @@ p.text-Center{
     text-align: center;
 }
 .Partners{
-    background-color: #f9f9f9;
+    background-color: #e3e6ea;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     border-radius: 50px;
