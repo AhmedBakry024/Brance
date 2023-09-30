@@ -1,3 +1,4 @@
+
 .Product{
     height: 200px;
     margin: 80px 0px;
@@ -7,7 +8,8 @@
     align-items: center;
     transition: transform 0.2s;
     mix-blend-mode: multiply;
-
+    /* box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); */
+    /* border: 5px; */
 }
 .Product img{
     width: 190px;
@@ -36,6 +38,13 @@
 }
 .Description b{
     font-size: 14px;
+}
+.productAmount{
+    width: 60px;
+    text-align: center;
+    border: 0;
+    background-color: transparent;
+    padding-bottom: 10px;
 }
 .paging{
     display: flex;
@@ -82,7 +91,8 @@
     margin: 30px 0;
     background-color: #f7f7f7;
     overflow-y: scroll;
-    scrollbar-width: thin;
+    scrollbar-width:auto;
+    border: none;
     
   }
 
@@ -94,6 +104,7 @@
     height: 100% ;
     z-index: 1 ;
     background-color: rgba(0, 0, 0, .5);
+    border: none;
   }
 .modal-div{
     display: flex;
@@ -105,7 +116,7 @@
     mix-blend-mode: multiply;
 }
 .Modal::-webkit-scrollbar {
-    width: 0px;
+    width: 10px;
   }
   .Description input{
     width: 70px;

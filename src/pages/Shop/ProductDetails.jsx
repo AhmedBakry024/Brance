@@ -40,10 +40,22 @@ const ProductDetails = (props) => {
 
                     </div>
                 </div>
-                <button className='addToCartBtn' onClick={() => { addToCart(id); notify() }}>
-                    Add To Cart
-                    {cartItemAmount > 0 && <> ({cartItemAmount})</>}
-                </button>
+                
+                {cartItemAmount > 0 ?
+                                <div className=' d-flex justify-content-center mt-3'>
+                                    <br/>
+                                    <button onClick={() => removeFromCart(id)} className='plus-minus align-self-center'><strong>-</strong></button>
+                                    <input className='productAmount' value={cartItem[id]} onChange={(e) => updateAmount(id, Number(e.target.value))} disabled />
+                                    <button onClick={() => { addToCart(id); notify() }} className='plus-minus align-self-center'><strong>+</strong></button>
+                                    <br/><br/>
+                                </div>
+                                :
+                                <>
+                                <button className='addToCartBtn' onClick={() => { addToCart(id); notify() }}>
+                                    Add To Cart
+                                </button><br/><br/>
+                                </>
+                            }
 
             </div>
             <div className='modal-div'>
