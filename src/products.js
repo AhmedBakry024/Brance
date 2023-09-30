@@ -63,7 +63,7 @@ export const PRODUCTS = [
     },
     {
         id: 4,
-        Name: "Mercedes Benz Club Black",
+        Name: " Club Black",
         Brand: "Mercedes Benz",
         Gender: "Men",
         Price: 100.0,
@@ -163,7 +163,7 @@ export const PRODUCTS = [
     },
     {
         id: 14,
-        Name: "Azzaro Wanted",
+        Name: " Wanted",
         Brand: "Azzaro",
         Gender: "Men",
         Price: 55.0,
@@ -173,7 +173,7 @@ export const PRODUCTS = [
     },
     {
         id: 15,
-        Name: "Hugo Boss Bottled",
+        Name: " Boss Bottled",
         Brand: "Hugo Boss",
         Gender: "Men",
         Price: 65.0,
@@ -193,7 +193,7 @@ export const PRODUCTS = [
     },
     {
         id: 17,
-        Name: "Versace Eros",
+        Name: " Eros",
         Brand: "Versace",
         Gender: "Men",
         Price: 75.0,
@@ -223,7 +223,7 @@ export const PRODUCTS = [
     },
     {
         id: 20,
-        Name: "Chanel Allure Homme Sport",
+        Name: " Allure Homme Sport",
         Brand: "Chanel",
         Gender: "Men",
         Price: 85.0,
@@ -233,7 +233,7 @@ export const PRODUCTS = [
     },
     {
         id: 21,
-        Name: "Dior Homme",
+        Name: " Homme",
         Brand: "Dior",
         Gender: "Men",
         Price: 80.0,
@@ -243,7 +243,7 @@ export const PRODUCTS = [
     },
     {
         id: 22,
-        Name: "Bvlgari Man in Black",
+        Name: " Man in Black",
         Brand: "Bvlgari",
         Gender: "Men",
         Price: 75.0,
@@ -253,7 +253,7 @@ export const PRODUCTS = [
     },
     {
         id: 23,
-        Name: "Calvin Klein Eternity",
+        Name: " Eternity",
         Brand: "Calvin Klein",
         Gender: "Men",
         Price: 50.0,
@@ -263,7 +263,7 @@ export const PRODUCTS = [
     },
     {
         id: 24,
-        Name: "Paco Rabanne 1 Million",
+        Name: " 1 Million",
         Brand: "Paco Rabanne",
         Gender: "Men",
         Price: 65.0,
@@ -273,7 +273,7 @@ export const PRODUCTS = [
     },
     {
         id: 25,
-        Name: "Yves Saint Laurent La Nuit de l'Homme",
+        Name: " La Nuit de l'Homme",
         Brand: "Yves Saint Laurent",
         Gender: "Men",
         Price: 75.0,
@@ -293,7 +293,7 @@ export const PRODUCTS = [
     },
     {
         id: 27,
-        Name: "Prada Luna Rossa",
+        Name: " Luna Rossa",
         Brand: "Prada",
         Gender: "Men",
         Price: 80.0,
@@ -303,7 +303,7 @@ export const PRODUCTS = [
     },
     {
         id: 28,
-        Name: "Tom Ford Black Orchid",
+        Name: " Black Orchid",
         Brand: "Tom Ford",
         Gender: "Men",
         Price: 100.0,
@@ -313,7 +313,7 @@ export const PRODUCTS = [
     },
     {
         id: 29,
-        Name: "Creed Aventus",
+        Name: " Aventus",
         Brand: "Creed",
         Gender: "Men",
         Price: 250.0,
@@ -323,7 +323,7 @@ export const PRODUCTS = [
     },
     {
         id: 30,
-        Name: "Gucci Guilty",
+        Name: " Guilty",
         Brand: "Gucci",
         Gender: "Men",
         Price: 70.0,
@@ -333,7 +333,7 @@ export const PRODUCTS = [
     },
     {
         id: 31,
-        Name: "Issey Miyake L'Eau d'Issey Pour Homme",
+        Name: " L'Eau d'Issey Pour Homme",
         Brand: "Issey Miyake",
         Gender: "Men",
         Price: 65.0,

@@ -3,9 +3,11 @@
   line-height: 1.5;
   background-color: #F0F2F5 !important;
   --toastify-icon-color-info: #fff !important;
+  scroll-behavior: smooth;
 }
 body{
   margin: 0px;
-  background-color: #F0F2F5 !important
+  background-color: #F0F2F5 !important;
+  scroll-behavior: smooth;
 
 }

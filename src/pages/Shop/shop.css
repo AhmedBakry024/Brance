@@ -1,5 +1,4 @@
-
-.Product{
+.Product {
     height: 200px;
     margin: 80px 0px;
     display: flex;
@@ -8,22 +7,19 @@
     align-items: center;
     transition: transform 0.2s;
     mix-blend-mode: multiply;
-    /* box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); */
-    /* border: 5px; */
+    padding: 0px;
 }
-.Product img{
+
+.Product img {
     width: 190px;
 }
-.Product .Description{
+
+.Product .Description {
     text-align: center;
 }
-.Product:hover{
-    mix-blend-mode: multiply;
-    transition: 0.1s ease-in;
-    cursor: pointer;
-    transform: scale(1.02);
-}
-.addToCartBtn{
+
+
+.addToCartBtn {
     max-width: fit-content;
     background-color: transparent;
     border: 2px solid rgb(19, 19, 19);
@@ -31,54 +27,61 @@
     border-radius: 15px;
     margin: 15px 0px 30px 0px;
 }
-.addToCartBtn:hover{
+
+.addToCartBtn:hover {
     background-color: rgb(19, 19, 19);
     color: white;
     cursor: pointer;
 }
-.Description b{
-    font-size: 14px;
-}
-.productAmount{
+
+.productAmount {
     width: 60px;
     text-align: center;
     border: 0;
     background-color: transparent;
     padding-bottom: 10px;
 }
-.paging{
+
+.paging {
     display: flex;
     justify-content: center;
 }
-.paging button{
-    width: 45px ;
-    height: 30px ;
+
+.paging button {
+    width: 45px;
+    height: 30px;
     background-color: rgb(19, 19, 19);
-    color:white;
-    border: none ;
+    color: white;
+    border: none;
     border-radius: 8px;
     margin: 10px;
     text-align: center;
 }
-.paging input{
+
+.paging input {
     width: 40px;
     text-align: center;
     border: 0;
     background-color: transparent;
 }
-.pagesWord{
+
+.pagesWord {
     margin-bottom: 0px;
 }
-.dimmed{
+
+.dimmed {
     background-color: gray !important;
-    cursor:default !important;
+    cursor: default !important;
 }
+
 .Toastify__toast-theme--colored.Toastify__toast--info {
     background: #fff !important;
 }
+
 .Toastify__progress-bar--info {
     background: #fff !important;
 }
+
 .Modal {
     position: absolute;
     top: 50%;
@@ -91,48 +94,85 @@
     margin: 30px 0;
     background-color: #f7f7f7;
     overflow-y: scroll;
-    scrollbar-width:auto;
+    scrollbar-width: auto;
     border: none;
-    
-  }
+    outline: none;
 
-  .Overlay {
-    position: fixed ;
-    top: 0 ;
-    left: 0 ;
-    width: 100% ;
-    height: 100% ;
-    z-index: 1 ;
+}
+
+.Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
     background-color: rgba(0, 0, 0, .5);
     border: none;
-  }
-.modal-div{
+    
+}
+
+.modal-div {
     display: flex;
     justify-content: center !important;
     align-items: center !important;
 }
-.Modal img{
+
+.Modal img {
     width: 190px;
     mix-blend-mode: multiply;
 }
+
 .Modal::-webkit-scrollbar {
     width: 10px;
-  }
-  .Description input{
+}
+.Overlay::-webkit-scrollbar {
+    width: 15px;
+}
+
+.Description input {
     width: 70px;
     text-align: center;
     border: 0;
     background-color: transparent;
 }
-.plus-minus{
-    width: 30px ;
-    height: 30px ;
+
+.plus-minus {
+    width: 30px;
+    height: 30px;
     background-color: rgb(19, 19, 19);
-    color:white;
-    border: none ;
+    color: white;
+    border: none;
     border-radius: 50%;
     margin-bottom: 10px;
     padding-top: 0px;
     font-weight: bolder;
     font-size: larger;
+}
+
+.plus::after {
+    font-weight: bolder;
+    content: "+";
+}
+
+.minus::after {
+    font-weight: bolder;
+
+    content: "-";
+}
+
+.myCard {
+    background-color: #ffffff00;
+    box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
+    border-radius: 15px;
+    transition: transform 0.2s;
+    mix-blend-mode: multiply;
+    width:80%;
+    
+}
+.myCard:hover {
+    mix-blend-mode: multiply;
+    transition: 0.1s ease-in;
+    cursor: pointer;
+    transform: scale(1.03);
 }
