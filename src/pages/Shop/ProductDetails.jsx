@@ -80,13 +80,13 @@ const ProductDetails = (props) => {
                         <button onClick={() => setModal(false)} className='btn btn-close me-2  '></button>
                     </div>
                     <div className='row m-1 d-flex justify-content-center justify-content-lg-start text-center'>
-                        <div className=' col-lg-4'>
-                            <div className=' d-none d-lg-block'>
+                        <div className=' col-md-4'>
+                            <div className='d-none d-md-block'>
                                 <br /><br /><br /><br /><br />
                             </div>
                             <img src={Image} className=' img-fluid'></img>
                         </div>
-                        <div className="Description col-lg-7">
+                        <div className="Description col-md-7">
                             <br />
                             <div className=' d-none d-lg-block'>
                                 <br /><br /><br /><br />
@@ -97,11 +97,6 @@ const ProductDetails = (props) => {
                             </p>
                             <p >{Description}</p>
                             <p className=' fw-semibold'>Release year: {Year}</p>
-
-
-                        </div>
-                        <br />
-                        <div>
 
                             <br className='d-none d-lg-block' />
 
@@ -123,7 +118,10 @@ const ProductDetails = (props) => {
                                     </button>
                                 </>
                             }
+
                         </div>
+                        <br />
+                        
                     </div>
 
                 </Modal>

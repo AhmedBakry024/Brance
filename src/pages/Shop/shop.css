@@ -124,10 +124,10 @@
 }
 
 .Modal::-webkit-scrollbar {
-    width: 10px;
+    width: 0px;
 }
 .Overlay::-webkit-scrollbar {
-    width: 15px;
+    width: 0px;
 }
 
 .Description input {
