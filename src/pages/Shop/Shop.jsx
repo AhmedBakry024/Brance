@@ -30,7 +30,7 @@ const Shop = () => {
             <br />
             {gender == 'Men' ?
                 <>
-                    <div className='ShopTitle row text-center'>
+                    <div className='ShopTitle row mx-5'>
                         <h1>Men's Fragrances</h1><br />
                     </div>
                     <br /><br />
@@ -58,8 +58,9 @@ const Shop = () => {
                 </>
                 :
                 <>
-                    <div className='ShopTitle row text-center'>
+                    <div className='ShopTitle row mx-5'>
                         <h1>Women's Fragrances</h1><br />
+                        
                     </div>
                     <br /><br />
                     <div className='products row d-flex'>
