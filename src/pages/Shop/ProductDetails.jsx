@@ -41,9 +41,9 @@ const ProductDetails = (props) => {
     }
     return (
         <div className='col-6 col-md-4 col-lg-3 px-0 mb-4 d-flex justify-content-center' >
-            <div className=' myCard pt-4 '>
+            <div className=' myCard pt-4 ' onClick={() => setModal(true)}>
                 <div className='row justify-content-center'>
-                    <div className='Product' onClick={() => setModal(true)} >
+                    <div className='Product'  >
                         <img src={Image} className=' img-fluid'></img>
                         <br />
                         <div className="Description">
