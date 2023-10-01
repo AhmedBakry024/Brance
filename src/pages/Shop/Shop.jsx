@@ -62,7 +62,7 @@ const Shop = () => {
                         <h1>Women's Fragrances</h1><br />
                     </div>
                     <br /><br />
-                    <div className='products'>
+                    <div className='products row d-flex'>
                         {pageProductsw.map((products) => <ProductDetails data={products} />)}
                         {/* {PRODUCTS.map((product) => <ProductDetails data={product} />)} */}
                     </div>
